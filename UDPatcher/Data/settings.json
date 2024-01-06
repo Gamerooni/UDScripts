@@ -1,324 +1,327 @@
 {
-  "UseModes": true,
-  "ModsToPatch": [],
-  "RenderScriptSettings": {
-    "ScriptMatches": {
-      "UD_CustomDevice_RenderScript": [
-        "zadequipscript",
-        "zadRestraintScript",
-        "zadRestraintFullScript",
-        "zadRestraintArmsScript",
-        "zadRestraintLegsScript",
-        "zadx_HobbleSkirtScript",
-        "zadx_RopeHarnessScript",
-        "zadxAnkleShacklesScript"
-      ],
-      "UD_CustomGag_RenderScript": [
-        "zadGagScript"
-      ],
-      "UD_CustomBelt_RenderScript": [
-        "zadBeltScript",
-        "zadBodyHarnessScript",
-        "zadBodyHarnessBeltScript",
-        "zadBlockingHarnessScript",
-        "zadxChainHarnessNippleChainScript",
-        "zadBodyNoCollarHarnessScript",
-        "zadBodyNoCollarHarnessBeltScript",
-        "zadCorsetBeltScript"
-      ],
-      "UD_CustomBra_RenderScript": [
-        "zadBraScript"
-      ],
-      "UD_CustomCorset_RenderScript": [
-        "zadCorsetScript"
-      ],
-      "UD_CustomPlug_RenderScript": [
-        "zadPlugScript",
-        "zadPlugSoulgemScript"
-      ],
-      "UD_CustomInflatablePlug_RenderScript": [
-        "zadPlugPumpsScript"
-      ],
-      "UD_CustomHeavyBondage_RenderScript": [
-        "zadRestraintArmBinderScript"
-      ],
-      "UD_CustomBlindfold_RenderScript": [
-        "zadBlockingBlindfoldScript",
-        "zadBlindfoldScript"
-      ],
-      "UD_CustomBoots_RenderScript": [
-        "zadSlaveBootsScript",
-        "zadSlaveBootsUnlockedScript"
-      ],
-      "UD_CustomCollar_RenderScript": [
-        "zadCollarScript",
-        "zadCollarNPiercingsScript"
-      ],
-      "UD_CustomGloves_RenderScript": [
-        "zadGlovesScript"
-      ],
-      "UD_CustomPiercing_RenderScript": [
-        "zadPiercingVaginalScript",
-        "zadPiercingNippleScript"
-      ],
-      "UD_CustomChargPlug_RenderScript": [
-        "zadPlugChargeableScript"
-      ],
-      "UD_CustomPanelGag_RenderScript": [
-        "zadGagPanelScript"
-      ],
-      "UD_CustomMittens_RenderScript": [
-        "zadx_BondageMittensScript"
-      ]
-    },
-    "OtherMatches": [
-      {
-        "InputScripts": [
-          "UD_CustomDevice_RenderScript"
-        ],
-        "KeywordMatch": [
-          {
-            "Keywords": [
-              "05226C:Devious Devices - Integration.esm"
-            ],
-            "OutputScript": "UD_CustomHeavyBondage_RenderScript",
-            "Priority": 13
-          },
-          {
-            "Keywords": [
-              "02AFA3:Devious Devices - Assets.esm"
-            ],
-            "OutputScript": "UD_CustomSuit_RenderScript",
-            "Priority": 0
-          },
-          {
-            "Keywords": [
-              "003DF7:Devious Devices - Assets.esm"
-            ],
-            "OutputScript": "UD_CustomCollar_RenderScript",
-            "Priority": 0
-          },
-          {
-            "Keywords": [
-              "027F29:Devious Devices - Assets.esm"
-            ],
-            "OutputScript": "UD_CustomBoots_RenderScript",
-            "Priority": 0
-          },
-          {
-            "Keywords": [
-              "02AFA2:Devious Devices - Assets.esm"
-            ],
-            "OutputScript": "UD_CustomHood_RenderScript",
-            "Priority": 2
-          },
-          {
-            "Keywords": [
-              "02AFA1:Devious Devices - Assets.esm"
-            ],
-            "OutputScript": "UD_CustomGloves_RenderScript",
-            "Priority": 0
-          },
-          {
-            "Keywords": [
-              "007EB8:Devious Devices - Assets.esm"
-            ],
-            "OutputScript": "UD_CustomGag_RenderScript",
-            "Priority": 0
-          },
-          {
-            "Keywords": [
-              "011B1A:Devious Devices - Assets.esm"
-            ],
-            "OutputScript": "UD_CustomBlindfold_RenderScript",
-            "Priority": 0
-          },
-          {
-            "Keywords": [
-              "003331:Devious Devices - Assets.esm"
-            ],
-            "OutputScript": "UD_CustomPlug_RenderScript",
-            "Priority": 0
-          },
-          {
-            "Keywords": [
-              "027F28:Devious Devices - Assets.esm"
-            ],
-            "OutputScript": "UD_CustomCorset_RenderScript",
-            "Priority": 0
-          },
-          {
-            "Keywords": [
-              "003330:Devious Devices - Assets.esm"
-            ],
-            "OutputScript": "UD_CustomBelt_RenderScript",
-            "Priority": 0
-          },
-          {
-            "Keywords": [
-              "017C43:Devious Devices - Assets.esm"
-            ],
-            "OutputScript": "UD_CustomHarness_RenderScript",
-            "Priority": 0
-          },
-          {
-            "Keywords": [
-              "003DFA:Devious Devices - Assets.esm"
-            ],
-            "OutputScript": "UD_CustomBra_RenderScript",
-            "Priority": 0
-          },
-          {
-            "Keywords": [
-              "003DF9:Devious Devices - Assets.esm"
-            ],
-            "OutputScript": "UD_CustomArmCuffs_RenderScript",
-            "Priority": 10
-          },
-          {
-            "Keywords": [
-              "003DF8:Devious Devices - Assets.esm"
-            ],
-            "OutputScript": "UD_CustomLegCuffs_RenderScript",
-            "Priority": 0
-          },
-          {
-            "Keywords": [
-              "00CA39:Devious Devices - Assets.esm",
-              "023E70:Devious Devices - Assets.esm"
-            ],
-            "OutputScript": "UD_CustomPiercing_RenderScript",
-            "Priority": 0
-          }
-        ],
-        "NameMatch": []
-      },
-      {
-        "InputScripts": [
-          "UD_CustomBelt_RenderScript",
-          "UD_CustomHarness_RenderScript"
-        ],
-        "KeywordMatch": [
-          {
-            "Keywords": [
-              "017C43:Devious Devices - Assets.esm"
-            ],
-            "OutputScript": "UD_CustomHarness_RenderScript",
-            "Priority": 0
-          }
-        ],
-        "NameMatch": [
-          {
-            "SearchText": "crotch",
-            "OutputScript": "UD_CustomCrotchDevice_RenderScript",
-            "Priority": 0
-          }
-        ]
-      },
-      {
-        "InputScripts": [
-          "UD_CustomGag_RenderScript"
-        ],
-        "KeywordMatch": [],
-        "NameMatch": [
-          {
-            "SearchText": "panel",
-            "OutputScript": "UD_CustomPanelGag_RenderScript",
-            "Priority": 0
-          },
-          {
-            "SearchText": "inflat",
-            "OutputScript": "UD_CustomInflatableGag_RenderScript",
-            "Priority": 1
-          }
-        ]
-      },
-      {
-        "InputScripts": [
-          "UD_CustomPlug_RenderScript"
-        ],
-        "KeywordMatch": [],
-        "NameMatch": [
-          {
-            "SearchText": "grand",
-            "OutputScript": "UD_ControlablePlug_RenderScript",
-            "Priority": 0
-          },
-          {
-            "SearchText": "inflat",
-            "OutputScript": "UD_CustomInflatablePlug_RenderScript",
-            "Priority": 0
-          }
-        ]
-      },
-      {
-        "InputScripts": [
-          "UD_CustomHood_RenderScript"
-        ],
-        "KeywordMatch": [],
-        "NameMatch": [
-          {
-            "SearchText": "gas",
-            "OutputScript": "UD_CustomGasMask_RenderScript",
-            "Priority": 0
-          }
-        ]
-      }
+    "UseModifiers": true,
+    "ModsToPatch": [],
+    "ModsToNotPatch": [
+        "UnforgivingDevices.esp"
     ],
-    "ScriptValues": {
-      "zad_DeviousDevice": "UD_DeviceKeyword",
-      "libs": "libs",
-      "deviceInventory": "deviceInventory"
+    "RenderScriptSettings": {
+        "ScriptMatches": {
+            "UD_CustomDevice_RenderScript": [
+                "zadequipscript",
+                "zadRestraintScript",
+                "zadRestraintFullScript",
+                "zadRestraintArmsScript",
+                "zadRestraintLegsScript",
+                "zadx_HobbleSkirtScript",
+                "zadx_RopeHarnessScript",
+                "zadxAnkleShacklesScript"
+            ],
+            "UD_CustomGag_RenderScript": [
+                "zadGagScript"
+            ],
+            "UD_CustomBelt_RenderScript": [
+                "zadBeltScript",
+                "zadBodyHarnessScript",
+                "zadBodyHarnessBeltScript",
+                "zadBlockingHarnessScript",
+                "zadxChainHarnessNippleChainScript",
+                "zadBodyNoCollarHarnessScript",
+                "zadBodyNoCollarHarnessBeltScript",
+                "zadCorsetBeltScript"
+            ],
+            "UD_CustomBra_RenderScript": [
+                "zadBraScript"
+            ],
+            "UD_CustomCorset_RenderScript": [
+                "zadCorsetScript"
+            ],
+            "UD_CustomPlug_RenderScript": [
+                "zadPlugScript",
+                "zadPlugSoulgemScript"
+            ],
+            "UD_CustomInflatablePlug_RenderScript": [
+                "zadPlugPumpsScript"
+            ],
+            "UD_CustomHeavyBondage_RenderScript": [
+                "zadRestraintArmBinderScript"
+            ],
+            "UD_CustomBlindfold_RenderScript": [
+                "zadBlockingBlindfoldScript",
+                "zadBlindfoldScript"
+            ],
+            "UD_CustomBoots_RenderScript": [
+                "zadSlaveBootsScript",
+                "zadSlaveBootsUnlockedScript"
+            ],
+            "UD_CustomCollar_RenderScript": [
+                "zadCollarScript",
+                "zadCollarNPiercingsScript"
+            ],
+            "UD_CustomGloves_RenderScript": [
+                "zadGlovesScript"
+            ],
+            "UD_CustomPiercing_RenderScript": [
+                "zadPiercingVaginalScript",
+                "zadPiercingNippleScript"
+            ],
+            "UD_CustomChargPlug_RenderScript": [
+                "zadPlugChargeableScript"
+            ],
+            "UD_CustomPanelGag_RenderScript": [
+                "zadGagPanelScript"
+            ],
+            "UD_CustomMittens_RenderScript": [
+                "zadx_BondageMittensScript"
+            ]
+        },
+        "OtherMatches": [
+            {
+                "InputScripts": [
+                    "UD_CustomDevice_RenderScript"
+                ],
+                "KeywordMatch": [
+                    {
+                        "Keywords": [
+                            "05226C:Devious Devices - Integration.esm"
+                        ],
+                        "OutputScript": "UD_CustomHeavyBondage_RenderScript",
+                        "Priority": 13
+                    },
+                    {
+                        "Keywords": [
+                            "02AFA3:Devious Devices - Assets.esm"
+                        ],
+                        "OutputScript": "UD_CustomSuit_RenderScript",
+                        "Priority": 0
+                    },
+                    {
+                        "Keywords": [
+                            "003DF7:Devious Devices - Assets.esm"
+                        ],
+                        "OutputScript": "UD_CustomCollar_RenderScript",
+                        "Priority": 0
+                    },
+                    {
+                        "Keywords": [
+                            "027F29:Devious Devices - Assets.esm"
+                        ],
+                        "OutputScript": "UD_CustomBoots_RenderScript",
+                        "Priority": 0
+                    },
+                    {
+                        "Keywords": [
+                            "02AFA2:Devious Devices - Assets.esm"
+                        ],
+                        "OutputScript": "UD_CustomHood_RenderScript",
+                        "Priority": 2
+                    },
+                    {
+                        "Keywords": [
+                            "02AFA1:Devious Devices - Assets.esm"
+                        ],
+                        "OutputScript": "UD_CustomGloves_RenderScript",
+                        "Priority": 0
+                    },
+                    {
+                        "Keywords": [
+                            "007EB8:Devious Devices - Assets.esm"
+                        ],
+                        "OutputScript": "UD_CustomGag_RenderScript",
+                        "Priority": 0
+                    },
+                    {
+                        "Keywords": [
+                            "011B1A:Devious Devices - Assets.esm"
+                        ],
+                        "OutputScript": "UD_CustomBlindfold_RenderScript",
+                        "Priority": 0
+                    },
+                    {
+                        "Keywords": [
+                            "003331:Devious Devices - Assets.esm"
+                        ],
+                        "OutputScript": "UD_CustomPlug_RenderScript",
+                        "Priority": 0
+                    },
+                    {
+                        "Keywords": [
+                            "027F28:Devious Devices - Assets.esm"
+                        ],
+                        "OutputScript": "UD_CustomCorset_RenderScript",
+                        "Priority": 0
+                    },
+                    {
+                        "Keywords": [
+                            "003330:Devious Devices - Assets.esm"
+                        ],
+                        "OutputScript": "UD_CustomBelt_RenderScript",
+                        "Priority": 0
+                    },
+                    {
+                        "Keywords": [
+                            "017C43:Devious Devices - Assets.esm"
+                        ],
+                        "OutputScript": "UD_CustomHarness_RenderScript",
+                        "Priority": 0
+                    },
+                    {
+                        "Keywords": [
+                            "003DFA:Devious Devices - Assets.esm"
+                        ],
+                        "OutputScript": "UD_CustomBra_RenderScript",
+                        "Priority": 0
+                    },
+                    {
+                        "Keywords": [
+                            "003DF9:Devious Devices - Assets.esm"
+                        ],
+                        "OutputScript": "UD_CustomArmCuffs_RenderScript",
+                        "Priority": 10
+                    },
+                    {
+                        "Keywords": [
+                            "003DF8:Devious Devices - Assets.esm"
+                        ],
+                        "OutputScript": "UD_CustomLegCuffs_RenderScript",
+                        "Priority": 0
+                    },
+                    {
+                        "Keywords": [
+                            "00CA39:Devious Devices - Assets.esm",
+                            "023E70:Devious Devices - Assets.esm"
+                        ],
+                        "OutputScript": "UD_CustomPiercing_RenderScript",
+                        "Priority": 0
+                    }
+                ],
+                "NameMatch": []
+            },
+            {
+                "InputScripts": [
+                    "UD_CustomBelt_RenderScript",
+                    "UD_CustomHarness_RenderScript"
+                ],
+                "KeywordMatch": [
+                    {
+                        "Keywords": [
+                            "017C43:Devious Devices - Assets.esm"
+                        ],
+                        "OutputScript": "UD_CustomHarness_RenderScript",
+                        "Priority": 0
+                    }
+                ],
+                "NameMatch": [
+                    {
+                        "SearchText": "crotch",
+                        "OutputScript": "UD_CustomCrotchDevice_RenderScript",
+                        "Priority": 0
+                    }
+                ]
+            },
+            {
+                "InputScripts": [
+                    "UD_CustomGag_RenderScript"
+                ],
+                "KeywordMatch": [],
+                "NameMatch": [
+                    {
+                        "SearchText": "panel",
+                        "OutputScript": "UD_CustomPanelGag_RenderScript",
+                        "Priority": 0
+                    },
+                    {
+                        "SearchText": "inflat",
+                        "OutputScript": "UD_CustomInflatableGag_RenderScript",
+                        "Priority": 1
+                    }
+                ]
+            },
+            {
+                "InputScripts": [
+                    "UD_CustomPlug_RenderScript"
+                ],
+                "KeywordMatch": [],
+                "NameMatch": [
+                    {
+                        "SearchText": "grand",
+                        "OutputScript": "UD_ControlablePlug_RenderScript",
+                        "Priority": 0
+                    },
+                    {
+                        "SearchText": "inflat",
+                        "OutputScript": "UD_CustomInflatablePlug_RenderScript",
+                        "Priority": 0
+                    }
+                ]
+            },
+            {
+                "InputScripts": [
+                    "UD_CustomHood_RenderScript"
+                ],
+                "KeywordMatch": [],
+                "NameMatch": [
+                    {
+                        "SearchText": "gas",
+                        "OutputScript": "UD_CustomGasMask_RenderScript",
+                        "Priority": 0
+                    }
+                ]
+            }
+        ],
+        "ScriptValues": {
+            "zad_DeviousDevice": "UD_DeviceKeyword",
+            "libs": "libs",
+            "deviceInventory": "deviceInventory"
+        }
+    },
+    "InventoryScriptSettings": {
+        "ScriptMatches": {
+            "UD_CustomDevice_EquipScript": [
+                "zadequipscript",
+                "zadGagScript",
+                "zadBeltScript",
+                "zadCorsetScript",
+                "zadPlugScript",
+                "zadPlugSoulgemScript",
+                "zadPlugChargeableScript",
+                "zadPlugPumpsScript",
+                "zadGagPanelScript",
+                "zadBodyHarnessScript",
+                "zadBodyHarnessBeltScript",
+                "zadBlockingHarnessScript",
+                "zadRestraintScript",
+                "zadRestraintFullScript",
+                "zadRestraintArmsScript",
+                "zadRestraintLegsScript",
+                "zadRestraintArmBinderScript",
+                "zadBlockingBlindfoldScript",
+                "zadBlindfoldScript",
+                "zadSlaveBootsScript",
+                "zadBlindfoldScript",
+                "zadSlaveBootsUnlockedScript",
+                "zadCollarScript",
+                "zadxChainHarnessNippleChainScript",
+                "zadGlovesScript",
+                "zadCollarNPiercingsScript",
+                "zadBraScript",
+                "zadx_HobbleSkirtScript",
+                "zadx_RopeHarnessScript",
+                "zadx_BondageMittensScript",
+                "zadxAnkleShacklesScript",
+                "zadPiercingVaginalScript",
+                "zadPiercingNippleScript",
+                "zadBodyNoCollarHarnessScript",
+                "zadBodyNoCollarHarnessBeltScript",
+                "zadCorsetBeltScript"
+            ]
+        }
+    },
+    "IMPORTANTCONSTANTS": {
+        "zadInvKeywordGetter": "02B5F0:Devious Devices - Integration.esm",
+        "udInvKeywordGetter": "1553DD:UnforgivingDevices.esp",
+        "udPatchKwGetter": "13A977:UnforgivingDevices.esp",
+        "udKwGetter": "11A352:UnforgivingDevices.esp",
+        "udPatchNoModeKwGetter": "1579BE:UnforgivingDevices.esp",
+        "udMainQstGetter": "15E73C:UnforgivingDevices.esp"
     }
-  },
-  "InventoryScriptSettings": {
-    "ScriptMatches": {
-      "UD_CustomDevice_EquipScript": [
-        "zadequipscript",
-        "zadGagScript",
-        "zadBeltScript",
-        "zadCorsetScript",
-        "zadPlugScript",
-        "zadPlugSoulgemScript",
-        "zadPlugChargeableScript",
-        "zadPlugPumpsScript",
-        "zadGagPanelScript",
-        "zadBodyHarnessScript",
-        "zadBodyHarnessBeltScript",
-        "zadBlockingHarnessScript",
-        "zadRestraintScript",
-        "zadRestraintFullScript",
-        "zadRestraintArmsScript",
-        "zadRestraintLegsScript",
-        "zadRestraintArmBinderScript",
-        "zadBlockingBlindfoldScript",
-        "zadBlindfoldScript",
-        "zadSlaveBootsScript",
-        "zadBlindfoldScript",
-        "zadSlaveBootsUnlockedScript",
-        "zadCollarScript",
-        "zadxChainHarnessNippleChainScript",
-        "zadGlovesScript",
-        "zadCollarNPiercingsScript",
-        "zadBraScript",
-        "zadx_HobbleSkirtScript",
-        "zadx_RopeHarnessScript",
-        "zadx_BondageMittensScript",
-        "zadxAnkleShacklesScript",
-        "zadPiercingVaginalScript",
-        "zadPiercingNippleScript",
-        "zadBodyNoCollarHarnessScript",
-        "zadBodyNoCollarHarnessBeltScript",
-        "zadCorsetBeltScript"
-      ]
-    }
-  },
-  "IMPORTANTCONSTANTS": {
-    "zadInvKeywordGetter": "02B5F0:Devious Devices - Integration.esm",
-    "udInvKeywordGetter": "1553DD:UnforgivingDevices.esp",
-    "udPatchKwGetter": "13A977:UnforgivingDevices.esp",
-    "udKwGetter": "11A352:UnforgivingDevices.esp",
-    "udPatchNoModeKwGetter": "1579BE:UnforgivingDevices.esp",
-    "udMainQstGetter": "15E73C:UnforgivingDevices.esp"
-  }
 }

@@ -442,7 +442,7 @@ namespace UDPatcher
         public static void AddUDKeywords(IArmor armor, UDImportantConstantsFound consts)
         {
             var keywords = new ExtendedList<IKeywordGetter>() { consts.udKw!, consts.udPatchKw! };
-            if (Settings.UseModes)
+            if (!Settings.UseModifiers)
             {
                 keywords.Add(consts.udPatchNoModeKw!);
             }
@@ -462,7 +462,15 @@ namespace UDPatcher
 
         public static bool IsArmorDD(IArmorGetter armor, IKeywordGetter zadInvKw)
         {
-            Console.WriteLine($"{armor.Name} has zad keyword? {armor.Keywords != null && armor.Keywords.Contains(zadInvKw)}");
+            //Console.WriteLine($"{armor.Name} has zad keyword? {armor.Keywords != null && armor.Keywords.Contains(zadInvKw)}");
+            return armor.Keywords != null
+                && armor.VirtualMachineAdapter?.Scripts != null
+                && armor.VirtualMachineAdapter.Scripts.Any()
+                && armor.Keywords.Contains(zadInvKw);
+        }
+        
+        public static bool IsArmorUD(IArmorGetter armor, IKeywordGetter zadInvKw)
+        {
             return armor.Keywords != null
                 && armor.VirtualMachineAdapter?.Scripts != null
                 && armor.VirtualMachineAdapter.Scripts.Any()
@@ -482,7 +490,7 @@ namespace UDPatcher
             if (renderDevice.TryResolveContext<ISkyrimMod, ISkyrimModGetter, IArmor, IArmorGetter>(linkCache, out var foundArmor))
             {
                 renderArmor = foundArmor.Record;
-                Console.WriteLine($"using {foundArmor.Record.EditorID} found in {foundArmor.ModKey}");
+                //Console.WriteLine($"using {foundArmor.Record.EditorID} found in {foundArmor.ModKey}");
             }
             else
             {
@@ -516,23 +524,39 @@ namespace UDPatcher
 
             var modsToPatch = Settings.ModsToPatch;
 
+            var modsToNotPatch = Settings.ModsToNotPatch;
+
+            if (modsToNotPatch.Any())
+            {
+                Console.WriteLine($"Blacklist:\n{string.Join("\n", modsToNotPatch)}");
+            }
+            
             var shortenedLoadOrder = modsToPatch.Any() ? state.LoadOrder.PriorityOrder.Where(
                 mod =>
-                modsToPatch.Contains(mod.ModKey)
-                ) : state.LoadOrder.PriorityOrder;
-            Console.WriteLine($"Our mods: {string.Join(", ", shortenedLoadOrder)}");
+                modsToPatch.Contains(mod.ModKey) && !modsToNotPatch.Contains(mod.ModKey)
+                ) : state.LoadOrder.PriorityOrder.Where(mod => !modsToNotPatch.Contains(mod.ModKey));
+            Console.WriteLine($"Found mods:\n{string.Join("\n", shortenedLoadOrder.Reverse())}");
             var shortenedLoadOrderFuller = modsToPatch.Any() ? state.LoadOrder.ListedOrder.Where(mod =>
                 modsToPatch.Contains(mod.ModKey) || mod.ModKey == ddiMod || mod.ModKey == udMod
                 ) : state.LoadOrder.ListedOrder;
+
+
             var idLinkCache = shortenedLoadOrderFuller.ToImmutableLinkCache<ISkyrimMod, ISkyrimModGetter>(LinkCachePreferences.Default);
 
             var consts = new UDImportantConstantsFound(Settings.IMPORTANTCONSTANTS, idLinkCache);
+
+            Console.WriteLine($"===========================Starting patching===========================");
 
             int totalPatched = 0;
             int newDevices = 0;
             foreach (IArmorGetter invArmorGetter in shortenedLoadOrder.Armor().WinningOverrides())
             {
                 if (!IsArmorDD(invArmorGetter, consts.zadInvKeyword!))
+                {
+                    continue;
+                }
+            
+                if (IsArmorUD(invArmorGetter, consts.udInvKeyword!))
                 {
                     continue;
                 }

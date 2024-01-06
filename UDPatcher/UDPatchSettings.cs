@@ -16,10 +16,14 @@ namespace UDPatcher
     public class UDPatchSettings
     {
         [MaintainOrder]
-        public bool UseModes = false;
+        [Tooltip("If patched devices can have modifiers added by UD (on runtime)")]
+        public bool UseModifiers = false;
         [MaintainOrder]
         [Tooltip("Leave this blank to patch the entire load order")]
         public HashSet<ModKey> ModsToPatch = new();
+        [MaintainOrder]
+        [Tooltip("Mods which will be ignored when patching")]
+        public HashSet<ModKey> ModsToNotPatch = new();
         [MaintainOrder]
         public UDRenderSettings RenderScriptSettings = new();
         [MaintainOrder]
