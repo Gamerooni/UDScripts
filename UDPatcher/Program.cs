@@ -624,7 +624,7 @@ namespace UDPatcher
                     var newInvScriptName = GetUDInvFromZadInv(invFinalScript.Name);
                     if (newInvScriptName == null)
                     {
-                        Console.WriteLine($"Could not find UD Inventory Script corresponding to {invFinalScript}");
+                        Console.WriteLine($"Could not find UD Inventory Script corresponding to {invFinalScript.Name}");
                         continue;
                     }
                     invScript.Name = newInvScriptName;
@@ -696,7 +696,7 @@ namespace UDPatcher
                 {
                     Console.WriteLine(armor.Key);
                 }
-                Console.WriteLine("----------------------------------------------------------------------");
+                Console.WriteLine("----------------------------------------------------------------------                                                                           ");
             }
             Console.WriteLine("\n");
         }
